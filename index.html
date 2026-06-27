@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nori | Умное озеленение</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="Логотип" class="logo-icon">
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#about" class="nav-link">О приложении</a>
+                <a href="#features" class="nav-link">Возможности</a>
+                <a href="#how" class="nav-link">Как работает</a>
+                <a href="#map" class="nav-link">Карта</a>
+                <a href="#reviews" class="nav-link">Отзывы</a>
+            </nav>
+            <a href="#download" class="btn-header">Скачать</a>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section hero-section" id="about">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-text">
+                        <div class="hero-top">
+                            <p class="hero-pre">ГОРОД БЕЗ ЗЕЛЕНИ?</p>
+                            <h1 class="hero-h1">ОЗЕЛЕНИТЕ КВАРТИРУ</h1>
+                            <p class="hero-body">
+                                Подбираем растения под вашу квартиру, напоминаем об уходе и управляем умными устройствами — чтобы зелёный уголок жил сам по себе.
+                            </p>
+                        </div>
+                        <div class="hero-btns">
+                            <a href="#download" class="btn-cta btn-primary">Скачать бесплатно</a>
+                            <a href="#how" class="btn-cta btn-secondary">Смотреть демо</a>
+                        </div>
+                    </div>
+                    <div class="hero-img-placeholder">
+                        <img src="images/1.jpg" alt="Растения в интерьере" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="container">
+                <div class="about-layout">
+                    <div class="about-left">
+                        <div class="about-header-text">
+                            <h2 class="sec-title">ПРИЛОЖЕНИЕ, КОТОРОЕ<br>ЗНАЕТ ВАШИ РАСТЕНИЯ<br>ЛУЧШЕ ВАС</h2>
+                            <p class="sec-body">
+                                Nori анализирует условия вашей квартиры<br>и подбирает растения, которые точно приживутся<br>по освещённости, площади, влажности и сезону.
+                            </p>
+                        </div>
+                        <div class="about-card card-big">
+                            <div class="about-card-img img-big">
+                                <img src="images/g1.jpg" alt="Умное сканирование и диагностика листьев" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+                            </div>
+                            <div class="about-card-overlay">
+                                <p class="card-label">УМНОЕ СКАНИРОВАНИЕ</p>
+                                <p class="card-desc">
+                                    Сфотографируйте растение, болезнь или насекомого и приложение определит вид и предложит уход.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-card card-small">
+                            <div class="about-card-text-side">
+                                <p class="card-label">УМНЫЕ УСТРОЙСТВА</p>
+                                <p class="card-desc">
+                                    Приложение учитывает освещение, влажность<br>и площадь, подбирает растения именно для вашего пространства.
+                                </p>
+                            </div>
+                            <div class="about-card-img img-small">
+                                <img src="images/g2.jpg" alt="Настройка датчиков климата" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+                            </div>
+                        </div>
+                        <div class="about-card card-small">
+                            <div class="about-card-text-side">
+                                <p class="card-label">АНАЛИЗ КВАРТИРЫ</p>
+                                <p class="card-desc">
+                                    Подключайте фитолампы и системы автополива. Приложение управляет ими само по расписанию.
+                                </p>
+                            </div>
+                            <div class="about-card-img img-small">
+                                <img src="images/g3.jpg" alt="Светлая комната с растениями" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="features2">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2 class="sec-title">ВСЕ, ЧТОБЫ КВАРТИРА<br>ОСТАВАЛАСЬ ЗЕЛЁНОЙ</h2>
+                    <p class="sec-body">
+                        От каталога растений до умных устройств — всё,<br>чтобы ваш домашний сад процветал круглый год.
+                    </p>
+                </div>
+                <div class="feat-grid">
+                    <div class="feat-card">
+                        <div class="feat-icon">
+                            <img src="images/f2.svg" alt="Иконка каталога" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+                        </div>
+                        <h3 class="feat-name">Каталог растений</h3>
+                        <p class="feat-desc">500+ видов с описанием, фото<br>и условиями содержания. Поиск<br>по параметрам квартиры.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">
+                            <img src="images/f3.svg" alt="Иконка рекомендаций" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+                        </div>
+                        <h3 class="feat-name">Рекомендации</h3>
+                        <p class="feat-desc">Подбор растений<br>по вашим условиям<br>и режим ухода для конкретного пространства.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">
+                            <img src="images/f4.svg" alt="Иконка устройств" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+                        </div>
+                        <h3 class="feat-name">Умные устройства</h3>
+                        <p class="feat-desc">Управляйте фитолампами<br>и системой автополива прямо<br>из приложения.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">
+                            <img src="images/f1.svg" alt="Иконка карты" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+                        </div>
+                        <h3 class="feat-name">Карта зелёности</h3>
+                        <p class="feat-desc">Находите зелёные зоны вашего города, участвуйте в эко-инициативах и выбирайте место<br>для прогулки.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="how">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2 class="sec-title">НЕСКОЛЬКО ШАГОВ<br>ДО ЗЕЛЕНОЙ КВАРТИРЫ</h2>
+                    <p class="sec-body">
+                        Три простых действия — и ваш дом наполнится<br>свежестью и уютом живых растений.
+                    </p>
+                </div>
+                <div class="how-steps">
+                    <div class="how-step">
+                        <div class="step-num">01</div>
+                        <h3 class="step-title">Добавьте растение</h3>
+                        <p class="step-desc">Сканируйте или выберите из каталога</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="step-num">02</div>
+                        <h3 class="step-title">Получайте рекомендации</h3>
+                        <p class="step-desc">Индивидуальный уход и напоминания</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="step-num">03</div>
+                        <h3 class="step-title">Управляйте устройствами</h3>
+                        <p class="step-desc">Автоматизируйте полив и освещение</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="map">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2 class="sec-title">ЗЕЛЕНЫЙ ГОРОД БЛИЖЕ,<br>ЧЕМ КАЖЕТСЯ</h2>
+                    <p class="sec-body">Находите парки, скверы и зелёные маршруты рядом с домом.</p>
+                </div>
+                <div id="main-map" class="map-placeholder"></div>
+            </div>
+        </section>
+
+        <section class="section" id="reviews">
+            <div class="container">
+                <div class="section-header-block reviews-header">
+                    <h2 class="sec-title">ОТЗЫВЫ</h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars"> ★★★★★ </div>
+                        <p class="review-text">
+                            Гладиолусы впервые зацвели в феврале — фитолампа по расписанию сделала своё дело.
+                        </p>
+                        <div class="review-author">
+                            <div class="review-avatar">
+                                <img src="images/a1.jpg" alt="Ива" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <span class="review-name">Ива</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars"> ★★★★★ </div>
+                        <p class="review-text">
+                            Сканирование болезни определило паутинного клеща за 3 секунды. Спасла фикус!
+                        </p>
+                        <div class="review-author">
+                            <div class="review-avatar">
+                                <img src="images/a2.jpg" alt="Мяку" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <span class="review-name">Мяку</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars"> ★★★★★ </div>
+                        <p class="review-text">
+                            Карта зелёности помогла найти парк в 10 минутах от дома, о котором я не знал 5 лет.
+                        </p>
+                        <div class="review-author">
+                            <div class="review-avatar">
+                                <img src="images/a3.jpg" alt="Кайфэн" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <span class="review-name">Кайфэн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="download">
+        <div class="container footer-inner">
+            <nav class="footer-nav">
+                <a href="#about" class="footer-link">О приложении</a>
+                <a href="#features" class="footer-link">Возможности</a>
+                <a href="#how" class="footer-link">Как работает</a>
+                <a href="#map" class="footer-link">Карта</a>
+                <a href="#reviews" class="footer-link">Отзывы</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="#" class="social-btn"><img src="images/tg.svg" alt="TG"></a>
+                <a href="#" class="social-btn"><img src="images/vk.svg" alt="VK"></a>
+                <a href="#" class="social-btn whatsapp"><img src="images/ws.svg" alt="WA"></a>
+            </div>
+            <div class="footer-contacts">
+                <p class="footer-contact-title">КОНТАКТЫ</p>
+                <p class="footer-contact-item">8 (950) 555 35 35</p>
+                <p class="footer-contact-item">8 (900) 119 12 13</p>
+                <p class="footer-contact-item">gkfjhrreh@gmail.com</p>
+                <p class="footer-contact-item">г. Санкт-Петербург, пр. Металлистов 66</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
+
+        burger.addEventListener('click', function (e) {
+            e.stopPropagation();
+            nav.classList.toggle('nav-open');
+            burger.classList.toggle('burger-open');
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!nav.contains(e.target) && !burger.contains(e.target)) {
+                nav.classList.remove('nav-open');
+                burger.classList.remove('burger-open');
+            }
+        });
+
+        const map = L.map('main-map', {
+            scrollWheelZoom: false
+        }).setView([59.9343, 30.3351], 11);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        const greenZones = {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": { "name": "Таврический сад", "desc": "Памятник садово-паркового искусства" },
+                    "geometry": { "type": "Point", "coordinates": [30.3609, 59.9443] }
+                },
+                {
+                    "type": "Feature",
+                    "properties": { "name": "Новая Голландия", "desc": "Культурное и зелёное пространство" },
+                    "geometry": { "type": "Point", "coordinates": [30.2892, 59.9290] }
+                },
+                {
+                    "type": "Feature",
+                    "properties": { "name": "Приморский парк Победы", "desc": "Озеленённая парковая зона" },
+                    "geometry": { "type": "Point", "coordinates": [30.241667, 59.971667] }
+                },
+                {
+                    "type": "Feature",
+                    "properties": { "name": "Удельный парк", "desc": "Крупный исторический парк на севере города" },
+                    "geometry": { "type": "Point", "coordinates": [30.3125, 60.005] }
+                },
+                {
+                    "type": "Feature",
+                    "properties": { "name": "Парк Сосновка", "desc": "Огромный массив хвойного леса и дорожек" },
+                    "geometry": { "type": "Point", "coordinates": [30.3503, 60.0177] }
+                },
+                {
+                    "type": "Feature",
+                    "properties": { "name": "Парк 300-летия Санкт-Петербурга", "desc": " Самый молодой парк города на берегу Финского залива" },
+                    "geometry": { "type": "Point", "coordinates": [30.201432, 59.982885] }
+                }
+            ]
+        };
+
+        L.geoJSON(greenZones, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, {
+                    radius: 10,
+                    fillColor: "#465539",
+                    color: "#F7F4E8",
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.9
+                });
+            },
+            onEachFeature: function (feature, layer) {
+                if (feature.properties) {
+                    layer.bindPopup(`
+                                            <div style="font-family: 'Onest', sans-serif; color: #273322; padding: 4px;">
+                                                <h3 style="margin: 0 0 4px 0; font-size: 16px; font-weight: 700;">${feature.properties.name}</h3>
+                                                <p style="margin: 0; font-size: 14px; color: #6B774E;">${feature.properties.desc}</p>
+                                            </div>
+                                        `);
+                }
+            }
+        }).addTo(map);
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const steps = document.querySelectorAll('.how-step');
+            const observerOptions = {
+                root: null,
+                rootMargin: '-10% 0px -20% 0px',
+                threshold: 0.3
+            };
+
+            const stepObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, observerOptions);
+
+            steps.forEach(step => {
+                stepObserver.observe(step);
+            });
+        });
+    </script>
+</body>
+</html>
